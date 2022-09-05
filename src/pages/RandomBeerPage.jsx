@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import Header from '../components/Header'
 
 function RandomBeerPage() {
     const [beer, setBeer] = useState({})
@@ -20,7 +19,6 @@ function RandomBeerPage() {
 
   return (
     <div>
-        <Header />
         <img src={beer.image_url} alt='beer bottle'/>
         <h3>{beer.name}</h3>
         <p>{beer.tagline}</p>

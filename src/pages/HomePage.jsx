@@ -17,7 +17,7 @@ function HomePage() {
         {/* Also possible with 'require' */}
         {/* <img src={require('../assets/random-beer.png')} alt='bottle and glass of beer'/> */}
         <img src={newBeer} alt='beer from the tab'/>
-        <h1><Link to='new-beer'>New beer</Link></h1>
+        <h1><Link to='/new-beer'>New beer</Link></h1>
     </div>
   )
 }

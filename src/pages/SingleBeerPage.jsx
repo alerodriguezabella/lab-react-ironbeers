@@ -2,7 +2,6 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
-import Header from '../components/Header'
 
 function SingleBeerPage() {
     const [beer, setBeer] = useState({})
@@ -21,7 +20,6 @@ function SingleBeerPage() {
 
   return (
     <div>
-        <Header />
         <img src={beer.image_url} alt='beer bottle'/>
         <h3>{beer.name}</h3>
         <p>{beer.tagline}</p>

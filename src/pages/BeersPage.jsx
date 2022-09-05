@@ -2,7 +2,6 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
-import Header from '../components/Header'
 
 
 function BeersPage() {
@@ -20,7 +19,6 @@ function BeersPage() {
 
   return (
     <div>
-        <Header />
         <h1>List of beers</h1>
         {beers.map((beer) => {
             return(
